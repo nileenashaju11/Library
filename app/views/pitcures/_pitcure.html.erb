@@ -1,0 +1,7 @@
+<strong>Images</strong>
+<% imagable.pitcures.each do |pitcure| %>
+ <p>
+ 	<hr>
+ 	<%= image_tag(pitcure.image.url,:size => "100x100") %>
+ </p>
+<% end %>

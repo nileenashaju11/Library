@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @author.name %>
+</p>
+
+<p>
+  <strong>Birth year:</strong>
+  <%= @author.birth_year %>
+</p>
+<%= render partial: "pitcures/pitcure", locals: {imagable: @author}%>
+<%= render partial: "pitcures/form", locals: {imagable: @author}%>
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', authors_path %>
